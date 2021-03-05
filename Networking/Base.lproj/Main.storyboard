@@ -164,12 +164,12 @@
                                                         <constraint firstAttribute="height" constant="100" id="Kvt-fS-8jX"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSl-hK-SPO">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of course" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSl-hK-SPO">
                                                     <rect key="frame" x="148" y="8" width="246" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="i05-0j-yGI"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -178,7 +178,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="3hm-km-3Qt"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -188,7 +188,7 @@
                                                         <constraint firstAttribute="height" constant="15" id="8cT-Jq-lgH"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="Kwp-vN-wzy"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -217,12 +217,19 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Bq0-mV-csQ" id="2f5-gG-mpc"/>
+                                    <outlet property="delegate" destination="Bq0-mV-csQ" id="yVZ-3t-LQX"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MhA-2F-1ju"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Our courses" id="Nw1-Sg-0GB"/>
+                    <connections>
+                        <outlet property="tableView" destination="QxN-2v-o2Q" id="5OV-IH-Cxf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhi-Gv-g72" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,7 +247,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="4"/>
                             </progressView>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deO-gZ-Juj">
-                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="688"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -249,10 +256,11 @@
                             </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TsP-UB-nwO"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="deO-gZ-Juj" firstAttribute="bottom" secondItem="TsP-UB-nwO" secondAttribute="bottom" id="2Ga-eq-hBC"/>
                             <constraint firstItem="AON-3n-tY0" firstAttribute="top" secondItem="TsP-UB-nwO" secondAttribute="top" id="Byf-Lq-m11"/>
-                            <constraint firstItem="deO-gZ-Juj" firstAttribute="top" secondItem="TsP-UB-nwO" secondAttribute="top" id="FfI-iW-Itz"/>
+                            <constraint firstItem="deO-gZ-Juj" firstAttribute="top" secondItem="AON-3n-tY0" secondAttribute="bottom" id="Mkj-vq-QxN"/>
                             <constraint firstItem="deO-gZ-Juj" firstAttribute="leading" secondItem="TsP-UB-nwO" secondAttribute="leading" id="Qp4-hE-OMB"/>
                             <constraint firstItem="TsP-UB-nwO" firstAttribute="trailing" secondItem="AON-3n-tY0" secondAttribute="trailing" id="R18-pv-OP4"/>
                             <constraint firstItem="AON-3n-tY0" firstAttribute="leading" secondItem="TsP-UB-nwO" secondAttribute="leading" id="ove-PQ-adD"/>

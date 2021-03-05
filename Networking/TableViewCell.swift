@@ -9,11 +9,10 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    @IBOutlet weak var courseImage: UIImageView!
-    @IBOutlet weak var courseNameLabel: UILabel!
-    @IBOutlet weak var numberOfLessons: UILabel!
-    @IBOutlet weak var numberOfTests: UILabel!
-    
+    @IBOutlet var courseImage: UIImageView!
+    @IBOutlet var courseNameLabel: UILabel!
+    @IBOutlet var numberOfLessons: UILabel!
+    @IBOutlet var numberOfTests: UILabel!
     
     
 }
