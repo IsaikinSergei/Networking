@@ -21,6 +21,7 @@
 		EA0338CB25F2E26100963BB4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0338CA25F2E26100963BB4 /* MainViewController.swift */; };
 		EA0338CE25F2E29100963BB4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0338CD25F2E29100963BB4 /* CollectionViewCell.swift */; };
 		EA0338D125F3911C00963BB4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0338D025F3911C00963BB4 /* NetworkManager.swift */; };
+		EA0338D525F7AFF100963BB4 /* ImageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0338D425F7AFF100963BB4 /* ImageProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EA0338CA25F2E26100963BB4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA0338CD25F2E29100963BB4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EA0338D025F3911C00963BB4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EA0338D425F7AFF100963BB4 /* ImageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				EA03389A25F02A8200963BB4 /* SceneDelegate.swift */,
 				EA0338C225F18ED100963BB4 /* Course.swift */,
 				EA0338C625F194AE00963BB4 /* WebsiteDescription.swift */,
+				EA0338D425F7AFF100963BB4 /* ImageProperties.swift */,
 				EA0338D025F3911C00963BB4 /* NetworkManager.swift */,
 				EA0338CA25F2E26100963BB4 /* MainViewController.swift */,
 				EA0338CD25F2E29100963BB4 /* CollectionViewCell.swift */,
@@ -169,6 +172,7 @@
 				EA0338BA25F1882E00963BB4 /* TableViewCell.swift in Sources */,
 				EA0338BE25F189C100963BB4 /* WebViewController.swift in Sources */,
 				EA03389B25F02A8200963BB4 /* SceneDelegate.swift in Sources */,
+				EA0338D525F7AFF100963BB4 /* ImageProperties.swift in Sources */,
 				EA0338B625F180FC00963BB4 /* CoursesViewController.swift in Sources */,
 				EA0338CB25F2E26100963BB4 /* MainViewController.swift in Sources */,
 				EA0338CE25F2E29100963BB4 /* CollectionViewCell.swift in Sources */,
