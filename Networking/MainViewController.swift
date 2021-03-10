@@ -13,9 +13,10 @@ enum Actions: String, CaseIterable {
     case downloadImage = "Download Image"
     case get = "GET"
     case post = "POST"
-    case ourCorses = "Our Courses"
+    case ourCourses = "Our Courses"
     case uploadImage = "Upload Image"
     case downloadFile = "Download File"
+    case ourCoursesAlamofire = "Our Courses (Alamofire)"
 }
 
 private let reuseIdentifier = "Cell"
@@ -114,13 +115,30 @@ class MainViewController: UICollectionViewController {
             NetworkManager.getRequest(url: url)
         case .post:
             NetworkManager.postRequest(url: url)
-        case .ourCorses:
+        case .ourCourses:
             performSegue(withIdentifier: "OurCourses", sender: self)
         case .uploadImage:
             NetworkManager.uploadImage(url: uploadImage)
         case .downloadFile:
             showAlert()
             dataProvider.startDonwload()
+        case .ourCoursesAlamofire:
+            performSegue(withIdentifier: "OurCoursesWithAlamofire", sender: self)
+        }
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let coursesVC = segue.destination as? CoursesViewController
+        
+        switch segue.identifier {
+        case "OurCourses":
+            coursesVC?.fetchData()
+        case "OurCoursesWithAlamofire":
+            coursesVC?.fetchDataWithAlamofire()
+        default:
+            break
         }
     }
 }
