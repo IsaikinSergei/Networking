@@ -72,6 +72,8 @@
                         <segue destination="Bq0-mV-csQ" kind="show" identifier="OurCoursesWithAlamofire" id="6J3-Xd-FiS"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ResponseData" id="ot8-lh-mgi"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="LargeImage" id="HgW-aS-rIk"/>
+                        <segue destination="Bq0-mV-csQ" kind="show" identifier="PostRequest" id="Iv7-Qk-gn2"/>
+                        <segue destination="Bq0-mV-csQ" kind="show" identifier="PutRequest" id="KjV-xe-Lcu"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYQ-7V-aM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -292,8 +294,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cMd-ii-Mae"/>
-        <segue reference="6J3-Xd-FiS"/>
+        <segue reference="HgW-aS-rIk"/>
+        <segue reference="KjV-xe-Lcu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
