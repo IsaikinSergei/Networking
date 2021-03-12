@@ -71,6 +71,7 @@
                         <segue destination="Bq0-mV-csQ" kind="show" identifier="OurCourses" id="Kdb-pU-Rmr"/>
                         <segue destination="Bq0-mV-csQ" kind="show" identifier="OurCoursesWithAlamofire" id="6J3-Xd-FiS"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ResponseData" id="ot8-lh-mgi"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="LargeImage" id="HgW-aS-rIk"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYQ-7V-aM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -231,22 +232,40 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Qtr-aq-Kr9">
                                 <rect key="frame" x="197" y="358" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comleted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcN-87-uTr">
+                                <rect key="frame" x="170" y="453" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vKq-RZ-hAZ">
+                                <rect key="frame" x="132" y="534" width="150" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="6I7-8a-LOf"/>
+                                </constraints>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="pcN-87-uTr" firstAttribute="top" secondItem="Qtr-aq-Kr9" secondAttribute="bottom" constant="75" id="49f-y4-Zwg"/>
+                            <constraint firstItem="vKq-RZ-hAZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7OV-9H-np0"/>
                             <constraint firstAttribute="trailing" secondItem="jAh-Pv-Oyi" secondAttribute="trailing" id="HRi-N5-62u"/>
+                            <constraint firstItem="pcN-87-uTr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Myk-Fi-bdM"/>
                             <constraint firstItem="jAh-Pv-Oyi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SwS-kA-ekG"/>
                             <constraint firstItem="Qtr-aq-Kr9" firstAttribute="centerX" secondItem="jAh-Pv-Oyi" secondAttribute="centerX" id="cnM-h6-gnc"/>
                             <constraint firstAttribute="bottom" secondItem="jAh-Pv-Oyi" secondAttribute="bottom" id="dsC-wG-YQr"/>
                             <constraint firstItem="jAh-Pv-Oyi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gdJ-ep-UAx"/>
                             <constraint firstItem="Qtr-aq-Kr9" firstAttribute="centerY" secondItem="jAh-Pv-Oyi" secondAttribute="centerY" id="lv2-NH-l2V"/>
+                            <constraint firstItem="vKq-RZ-hAZ" firstAttribute="top" secondItem="pcN-87-uTr" secondAttribute="bottom" constant="60" id="xwl-0h-tFT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Image" id="01C-jo-2m7"/>
                     <connections>
                         <outlet property="activityIndicator" destination="Qtr-aq-Kr9" id="5Az-Yj-xbX"/>
+                        <outlet property="completedLabel" destination="pcN-87-uTr" id="NOV-fE-nub"/>
                         <outlet property="imageView" destination="jAh-Pv-Oyi" id="XjJ-2L-rUD"/>
+                        <outlet property="progressView" destination="vKq-RZ-hAZ" id="7Hx-ff-xs4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -273,7 +292,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ot8-lh-mgi"/>
+        <segue reference="cMd-ii-Mae"/>
         <segue reference="6J3-Xd-FiS"/>
     </inferredMetricsTieBreakers>
     <resources>
