@@ -171,4 +171,22 @@ class AlamofireNetworkRequest {
             }
         }
     }
+    
+    static func uploadImage(url: String) {
+        
+        guard let url = URL(string: url) else { return }
+        
+        let image = UIImage(named: "Notification")!
+        let data = image.pngData()!
+        
+        let httpHeaders = ["Authorization": "Client-ID 1bd22b9ce396a4c"]
+        
+        
+        //не разобрался, какой MultipartFormdata подходит
+        AF.upload(multipartFormData: { (multipartFormData) in
+            multipartFormData.append(data, withName: "image")
+        }, to: url, method: .post, headers: httpHeaders) { (<#inout URLRequest#>) in
+            <#code#>
+        }
+    }
 }
