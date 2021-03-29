@@ -25,6 +25,10 @@
 		EA0338D525F7AFF100963BB4 /* ImageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0338D425F7AFF100963BB4 /* ImageProperties.swift */; };
 		EA0338D825F7F74F00963BB4 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0338D725F7F74F00963BB4 /* DataProvider.swift */; };
 		EA0338E325F9528600963BB4 /* AlamofireNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0338E225F9528600963BB4 /* AlamofireNetworkRequest.swift */; };
+		EA71FC52261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.18.33.png in Resources */ = {isa = PBXBuildFile; fileRef = EA71FC4E261228A200AEC5C5 /* Снимок экрана 2021-03-29 в 19.18.33.png */; };
+		EA71FC53261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.21.08.png in Resources */ = {isa = PBXBuildFile; fileRef = EA71FC4F261228A200AEC5C5 /* Снимок экрана 2021-03-29 в 19.21.08.png */; };
+		EA71FC54261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.15.53.png in Resources */ = {isa = PBXBuildFile; fileRef = EA71FC50261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.15.53.png */; };
+		EA71FC55261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.15.31.png in Resources */ = {isa = PBXBuildFile; fileRef = EA71FC51261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.15.31.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		EA0338D425F7AFF100963BB4 /* ImageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProperties.swift; sourceTree = "<group>"; };
 		EA0338D725F7F74F00963BB4 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		EA0338E225F9528600963BB4 /* AlamofireNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkRequest.swift; sourceTree = "<group>"; };
+		EA71FC4E261228A200AEC5C5 /* Снимок экрана 2021-03-29 в 19.18.33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2021-03-29 в 19.18.33.png"; sourceTree = "<group>"; };
+		EA71FC4F261228A200AEC5C5 /* Снимок экрана 2021-03-29 в 19.21.08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2021-03-29 в 19.21.08.png"; sourceTree = "<group>"; };
+		EA71FC50261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.15.53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2021-03-29 в 19.15.53.png"; sourceTree = "<group>"; };
+		EA71FC51261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.15.31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2021-03-29 в 19.15.31.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 		EA03388C25F02A8200963BB4 = {
 			isa = PBXGroup;
 			children = (
+				EA71FC43261227F500AEC5C5 /* Screenshots */,
 				EA03389725F02A8200963BB4 /* Networking */,
 				EA03389625F02A8200963BB4 /* Products */,
 				D09924A29D8AA613B01249A1 /* Pods */,
@@ -122,6 +131,17 @@
 				EA0338A625F02A8400963BB4 /* Info.plist */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		EA71FC43261227F500AEC5C5 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				EA71FC51261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.15.31.png */,
+				EA71FC50261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.15.53.png */,
+				EA71FC4E261228A200AEC5C5 /* Снимок экрана 2021-03-29 в 19.18.33.png */,
+				EA71FC4F261228A200AEC5C5 /* Снимок экрана 2021-03-29 в 19.21.08.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +203,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA71FC53261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.21.08.png in Resources */,
+				EA71FC54261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.15.53.png in Resources */,
+				EA71FC52261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.18.33.png in Resources */,
+				EA71FC55261228A300AEC5C5 /* Снимок экрана 2021-03-29 в 19.15.31.png in Resources */,
 				EA0338A525F02A8400963BB4 /* LaunchScreen.storyboard in Resources */,
 				EA0338A225F02A8400963BB4 /* Assets.xcassets in Resources */,
 				EA0338A025F02A8200963BB4 /* Main.storyboard in Resources */,
@@ -399,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Networking/Networking.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Networking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -418,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Networking/Networking.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Networking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
